@@ -1,0 +1,214 @@
+* use audited cryptography. do not roll your own. do not trust others that do (e.g., telegram).
+
+* harden your OS.
+  https://wiki.archlinux.org/index.php/Security
+  https://wiki.centos.org/HowTos/OS_Protection
+  https://wiki.debian.org/Hardening
+  https://wiki.gentoo.org/wiki/Hardened_Gentoo
+  https://docs.fedoraproject.org/en-US/Fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html
+  https://help.ubuntu.com/community/Security
+
+* encrypt your hard drive (full disk encryption, or FDE for short).
+  standard LVM encryption is the best option and should be available when installing your linux distro.
+
+      for a disk that is not part of your operating system, a portable drive for example, dmcrypt/LUKS is the best option but veracrypt is 
+      available on all platforms. keep in mind your installer may or may not encrypt your GRUB and there are several ways of dealing with 
+      that issue which are discussed in the Paranoid #! security guide linked in the introductory resources below. keep in mind disk 
+      encryption means nothing to an experienced attacker with physical access if you have not completely shut down your computer and 
+      wiped the RAM.
+
+* encrypt your emails.
+  PGP is pretty much all we have, but it is all we need.
+  https://www.enigmail.net/
+
+      your metadata may still be collected. if you care about metadata, use a disposable email account or a trusted provider. suggestions 
+      include protonmail or cock.li.
+
+* encrypt your instant messages.
+  for better or worse XMPP+OTR is still our best bet.
+  https://otr.cypherpunks.ca/
+
+      i would not depend on anything else. even if the crypto in other apps is theoretically sound, the implementation fails or the 
+      distribution method is inherently flawed. cryptocat is an unpopular, but good option. telegram, tox, and wickr are fucked. do not 
+      even bother. you might as well use skype.
+
+* use a local password manager (no cloud bullshit).
+  any. it is better than what you are doing now.
+
+* strong passwords. make sure they are long and unique. 
+  https://www.xkcd.com/936/
+
+* do not reuse passwords. seriously.
+  if you do, consider your password public knowledge.
+
+      bypassing a login wall? sure. fuck it. who cares if someone else uses it.
+      anything you care about? no. absolutely not.
+
+* better yet, use randomly generated passwords. the best password is one you cannot remember.
+  https://www.grc.com/passwords.htm
+
+* your new search engine is duckduckgo or searx.
+  https://duckduckgo.com/
+  https://searx.me/
+
+* your new browser is firefox.
+  be sure to go into options, then security, and uncheck block malicious content.
+  https://www.mozilla.org/en-US/firefox/new/
+
+* modify some settings
+  enter about:config into your url bar and apply the following modifications. do not bitch about there being too many options. that is the 
+  fucking point. you cannot even configure many of these settings in other browsers without modifying its source or building addons.
+  https://hastebin.com/ivuhasopob
+
+      the changes listed above are unambiguous and unopinionated. you can go a much further than this at the expense of comfort and 
+      convenience. consider modifying some of the settings listed on https://github.com/pyllyukko/user.js/blob/master/user.js depending on 
+      the sacrifices you are willing to make for privacy and security.
+
+* now install your addons.
+  required: ublock origin, https everywhere, noscript, blender
+  https://addons.mozilla.org/en-US/firefox/
+
+* apply your filters.
+  required: easylist, easyprivacy.
+  https://easylist.to/
+
+* and test your results.Cybersecurity resources:
+Learning: https://hastebin.com/aludiyigim
+CTF/Wargames: https://hastebin.com/ofofalafid
+News: https://hastebin.com/onimofeyut
+Other useful stuff: https://hastebin.com/xixijinuge
+Essentials Pastebin: https://hastebin.com/fifetelewo
+Books: http://www.allitebooks.com/
+Network visualisation: https://dowse.eu/
+Unofficial grsec: https://github.com/minipli/linux-unofficial_grsec/tree/linux-4.9.x-unofficial_grsec
+Security tips in order of difficulty: https://hastebin.com/ucanorusew
+Qualys Security Advisory - The Stack Clash: https://www.qualys.com/2017/06/19/stack-clash/stack-clash.txt
+http://boards.4chan.org/g/thread/61062751#p61064761's advice: https://hastebin.com/sizimakofi
+Firefox extensions: https://hastebin.com/xawurihifo
+TEMPEST attacks against AES: https://www.fox-it.com/nl/wp-content/uploads/sites/12/Tempest_attacks_against_AES.pdf
+Shared thoughts after 6+ years in Pentesting (http://boards.4chan.org/g/thread/61194248#p61211017): https://0x00sec.org/t/shared-thoughts-after-6-years-in-pentesting/2492
+Cybrary: https://www.cybrary.it/
+Awesome Infosec: https://github.com/onlurking/awesome-infosec
+InfoSec and exploitation tool diagram: https://netsec.ws/infosec.svg
+So you want to be a Hacker: https://netsec.ws/?p=468
+The OWASP Mobile Security Testing Guide: https://b-mueller.gitbooks.io/the-owasp-mobile-security-testing-guide/content/
+
+Cryptocurrency:
+Verge:
+Website: https://vergecurrency.com/
+Interview: https://youtu.be/EFXkJjgPlII
+Monero:
+Website: https://getmonero.org/
+
+Anonymity networks:
+I2P: https://geti2p.net/en/
+
+Tox:
+Tuntox - Tox protocol TCP tunnel: https://github.com/gjedeer/tuntox
+ToxBot: https://github.com/JFreegman/ToxBot
+ToxVPN: https://github.com/cleverca22/toxvpn
+
+Cybersecurity videos:
+DEFCON 14: The Making of atlas: Kiddie to Hacker in 5 Sleepless Nights: https://youtu.be/gYOy7CGpPIU
+DEFCON 16: Nmap: Scanning the Internet: https://youtu.be/Hk-21p2m8YY
+
+Cybersecurity news:
+
+https://www.schneier.com/
+https://grsecurity.net/blog.php
+https://isc.sans.edu/
+https://blog.torproject.org/category/tags/security-fixes
+http://resources.infosecinstitute.com/
+http://www.windowsecurity.com/articles-tutorials/
+https://www.sans.org/reading-room/
+https://threatpost.com/
+https://packetstormsecurity.com/
+
+Introduction to cybersecurity:
+
+https://ssd.eff.org/
+    your first steps.
+https://trailofbits.github.io/ctf/index.html
+    introduction to CTFs. even if you never do one, this is a good read.
+https://wiki.installgentoo.com/index.php/Anonymizing_yourself
+   quick and dirty guide to anonymizing yourself.
+https://hastebin.com/vupatamesu
+    this is the old, fabled, Paranoid #! security guide. not all of it is up to date, but it is very thorough.
+https://samsymons.com/blog/reverse-engineering-with-radare2-part-1/
+
+Learning resources:
+
+https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md
+    absolutely massive collection of free resources for learning programming from beginner to expert level.
+https://www.offensive-security.com/metasploit-unleashed/
+http://www.allitebooks.com/
+http://opensecuritytraining.info/Training.html
+http://www.und.edu/org/crypto/crypto/lanaki.crypt.class/
+
+CTF and wargames:
+
+https://www.pentesterlab.com/
+https://www.mavensecurity.com/resources/web-security-dojo/
+https://exploit-exercises.com/
+http://www.itsecgames.com/
+http://forensicscontest.com/puzzles
+https://pwnable.tw/
+https://io.netgarage.org/
+https://ctftime.org/
+https://www.vulnhub.com/
+https://w3challs.com/challenges/hacking
+https://xss-game.appspot.com/
+http://smashthestack.org/
+http://www.hackertest.net/
+https://www.hackthissite.org/
+https://overthewire.org/wargames/
+https://0x0539.net/
+http://3564020356.org/
+http://pwnable.kr/
+
+Vulnerability management:
+
+https://www.cvedetails.com/
+https://www.exploit-db.com/
+https://www.rapid7.com/db/
+http://mvfjfugdwgc5uwho.onion/
+https://cve.mitre.org/cve/cve.html
+    this site lets you download their CVE list in formats easier to work with.
+
+Cryptography:
+
+https://pqcrypto.org/
+http://www.tandfonline.com/toc/ucry20/current
+
+Penetration testing:
+
+http://ytxmrc3pcbv5464e.onion/files/
+    collection of various ebooks mostly focused on pentesting.
+
+Reverse engineering:
+
+https://beginners.re/
+https://github.com/rpisec/mbe
+http://blog.ijun.org/2009/12/understanding-elf-using-readelf-and.html
+http://ref.x86asm.net/index.html
+    easily-searchable opcode and instruction reference.
+  https://panopticlick.eff.org/
+
+* do not use chrome. chrome is a closed source browser by a for profit corporation. firefox is an open source browser by a non-profit
+  organization. use your head.
+
+* do not use chromium either. it may be open source, but it still phones home.
+
+* block malicious sites in your hosts file.
+  https://github.com/StevenBlack/hosts
+
+* use an anonymous VPN. a paid one. without traffic logs.
+  do torrent over VPN.
+
+* use TOR.
+  do not torrent over TOR.
+  https://www.torproject.org/
+
+* understand the difference between anonymity, privacy, and security.
+
+* read the resources paste to get started.
